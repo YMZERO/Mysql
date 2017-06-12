@@ -1,0 +1,1 @@
+select pinpai,count(*) as `数量`,max(price) as `最大值`,min(price) as `最小值`,sum(price) as `总和`,avg(price) as `均值` from product group by pinpai having `均值` >2000;
